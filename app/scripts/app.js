@@ -9,7 +9,7 @@
  * Main module of the application.
  */
 angular
-  .module('staticBlogApp', [
+    .module('staticBlogApp', [
     'ngAnimate',
     'ngAria',
     'ngCookies',
@@ -19,29 +19,24 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
-      })
-      .when('/BlogContent', {
-        templateUrl: 'views/blogcontent.html',
-        controller: 'BlogcontentCtrl',
-        controllerAs: 'BlogContent'
-      })
-      .when('/blog1', {
-        templateUrl: 'views/blog1.html',
-        controller: 'Blog1Ctrl',
-        controllerAs: 'blog1'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
-  });
+    .config(function ($routeProvider) {
+        $routeProvider
+            .when('/', {
+                templateUrl: 'views/Home/landingpagehead.html',
+                controller: 'MainCtrl',
+                controllerAs: 'main'
+            })
+            .when('/about', {
+                templateUrl: 'views/about.html',
+                controller: 'AboutCtrl',
+                controllerAs: 'about'
+            })
+            .when('/blog1', {
+                templateUrl: 'views/blog1.html',
+                controller: 'BlogContentCtrl',
+                controllerAs: 'BlogContentCtrl'
+            })
+            .otherwise({
+                redirectTo: '/'
+            });
+    });

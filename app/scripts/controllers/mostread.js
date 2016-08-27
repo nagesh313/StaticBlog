@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name staticBlogApp.controller:Blog1Ctrl
+ * @name staticBlogApp.controller:MostreadCtrl
  * @description
- * # Blog1Ctrl
+ * # MostreadCtrl
  * Controller of the staticBlogApp
  */
 angular.module('staticBlogApp')
-  .controller('Blog1Ctrl', function () {
+  .controller('MostReadCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

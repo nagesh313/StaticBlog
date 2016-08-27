@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name staticBlogApp.controller:BlogcontentCtrl
+ * @name staticBlogApp.controller:RecentblogsCtrl
  * @description
- * # BlogcontentCtrl
+ * # RecentblogsCtrl
  * Controller of the staticBlogApp
  */
 angular.module('staticBlogApp')
-  .controller('BlogContentCtrl', function () {
+  .controller('RecentblogsCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

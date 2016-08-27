@@ -1,23 +1,23 @@
 'use strict';
 
-describe('Controller: BlogcontentcontrollerCtrl', function () {
+describe('Controller: MostreadCtrl', function () {
 
   // load the controller's module
   beforeEach(module('staticBlogApp'));
 
-  var BlogcontentcontrollerCtrl,
+  var MostreadCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    BlogcontentcontrollerCtrl = $controller('BlogcontentcontrollerCtrl', {
+    MostreadCtrl = $controller('MostreadCtrl', {
       $scope: scope
       // place here mocked dependencies
     });
   }));
 
   it('should attach a list of awesomeThings to the scope', function () {
-    expect(BlogcontentcontrollerCtrl.awesomeThings.length).toBe(3);
+    expect(MostreadCtrl.awesomeThings.length).toBe(3);
   });
 });
