@@ -32,7 +32,7 @@ angular
                 controllerAs: 'about'
             })
             .when('/blog1', {
-                templateUrl: 'views/blog1.html',
+                templateUrl: 'views/BlogPages/blog1.html',
                 controller: 'BlogContentCtrl',
                 controllerAs: 'BlogContentCtrl'
             })
